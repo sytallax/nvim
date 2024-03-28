@@ -78,7 +78,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
         lsp_map("n", "gd", vim.lsp.buf.definition, "[G]oto [D]efinition")
         lsp_map("n", "gt", vim.lsp.buf.type_definition, "[G]oto [t]ype Definition")
         lsp_map("n", "gD", vim.lsp.buf.declaration, "[G]oto [D]eclaration")
-        -- lsp_map("n", "gr", vim.lsp.buf.references, "[G]oto [R]eferences")
+        lsp_map("n", "gr", vim.lsp.buf.references, "[G]oto [R]eferences")
         lsp_map("n", "gI", vim.lsp.buf.implementation, "[G]oto [I]mplementation")
 
         lsp_telescope_map("n", "gr", tele_builtin("lsp_references"), vim.lsp.buf.references, "Go to references")
