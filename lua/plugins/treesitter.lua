@@ -9,7 +9,7 @@ return {
     event = { "BufReadPre", "BufNewFile" },
     opts = {
         -- List of parsers to install automatically
-        ensure_installed = { "help", "bash", "javascript", "json", "lua", "python", "html", "typescript", "vim", "vimdoc" },
+        ensure_installed = { "help", "bash", "javascript", "java", "json", "lua", "python", "html", "typescript", "vim", "vimdoc" },
         auto_install = true,
         highlight = {
             enable = true,
