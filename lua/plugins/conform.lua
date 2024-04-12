@@ -30,8 +30,6 @@ return {
             typescript = prettier,
             yaml = prettier,
 
-            go = { "gofmt" },
-
             sql = { "sqlfluff" },
         },
     },
