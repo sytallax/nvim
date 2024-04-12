@@ -76,6 +76,7 @@ return {
                     'ruff_lsp',
                     'tsserver',
                     'lua_ls',
+                    'gopls',
                 },
                 handlers = {
                     lsp_zero.default_setup,
@@ -104,9 +105,10 @@ return {
         opts = {
             autocmd = {
                 events = { "BufEnter", "BufWritePost" },
-                pattern = { "*.py", "*.lua", "*.js", "*.ts", },
+                pattern = { "*.py", "*.lua", "*.js", "*.ts", "*.go", },
                 linters_by_ft = {
                     python = { "mypy" },
+                    go = { "golangcilint" },
                 },
             },
             on_demand = {
